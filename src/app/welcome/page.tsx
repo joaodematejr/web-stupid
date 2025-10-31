@@ -33,7 +33,7 @@ export default function Welcome() {
   };
 
   const goToForm = () => {
-    router.push('/formulario');
+    router.push('/form');
   };
 
   if (loading) {

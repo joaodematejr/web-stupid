@@ -1,8 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Web Stupid - Sistema de Login e Formulário
 
-## Getting Started
+Este projeto é uma aplicação Next.js com sistema de autenticação Firebase e formulários.
 
-First, run the development server:
+## 🚀 Funcionalidades
+
+- ✅ **Tela de Login/Cadastro**: Autenticação com Firebase Auth
+- ✅ **Tela de Boas-vindas**: Interface de boas-vindas após login
+- ✅ **Formulário**: Formulário completo com validação
+- ✅ **Proteção de Rotas**: Apenas usuários autenticados podem acessar
+- ✅ **Responsivo**: Interface adaptável a diferentes dispositivos
+
+## 📦 Instalação
+
+1. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
+
+2. Configure o Firebase:
+   - Acesse o [Firebase Console](https://console.firebase.google.com/)
+   - Crie um novo projeto
+   - Ative a autenticação (Authentication) e o Firestore Database
+   - Copie as configurações do seu projeto
+
+3. Configure as credenciais do Firebase:
+   - Abra o arquivo `lib/firebase.ts`
+   - Substitua as configurações pelos dados do seu projeto Firebase
+
+## 🔧 Como usar
+
+1. Execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
