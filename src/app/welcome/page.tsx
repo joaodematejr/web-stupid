@@ -36,6 +36,10 @@ export default function Welcome() {
     router.push('/form');
   };
 
+  const goToDevices = () => {
+    router.push('/devices');
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -72,6 +76,13 @@ export default function Welcome() {
               </button>
               
               <button
+                onClick={goToDevices}
+                className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transform transition hover:scale-105 shadow-lg"
+              >
+                Cadastrar Dispositivo
+              </button>
+              
+              <button
                 onClick={handleLogout}
                 className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-4 px-8 rounded-lg transform transition hover:scale-105 shadow-lg"
               >
@@ -80,11 +91,17 @@ export default function Welcome() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 text-center">
+          <div className="grid md:grid-cols-4 gap-6 text-center">
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="text-indigo-600 text-4xl mb-4">📋</div>
               <h3 className="text-lg font-semibold mb-2">Formulários</h3>
               <p className="text-gray-600">Preencha formulários de forma rápida e segura</p>
+            </div>
+            
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="text-green-600 text-4xl mb-4">📱</div>
+              <h3 className="text-lg font-semibold mb-2">Dispositivos</h3>
+              <p className="text-gray-600">Cadastre e gerencie seus dispositivos eletrônicos</p>
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-md">
